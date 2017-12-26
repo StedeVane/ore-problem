@@ -1,0 +1,68 @@
+3
+r1
+r2
+r3
+3
+c1
+c2
+c3
+1 2 3 
+2 3 4
+3 4 6
+
+
+3 r1 r2 r3
+5 u1 u2 u3 x1 x2
+1 0 0 1 -2
+0 1 0 -2 1
+0 0 1 2 1
+
+_Tritanium
+_Pyerite
+_Mexallon
+_Isogen
+_Nocxium
+_Zydrine
+_Megacyte
+
+Arkonor	
+Bistot
+Crokite
+Gneiss
+Spodumain
+DarkOchre
+
+
+
+
+3.08*Arkonor + 6.11*Bistot + 7.81*Crokite + 3.27*DarkOchre + 1.03*Gneiss + 16*Spodumain + 0.01 * (Tritanium + Tritanium + Pyerite + Mexallon + Isogen + Nocxium + Zydrine + Megacyte) -> min
+
+Arkonor - 150260*Tritanium - 1708*Mexallon - 219*Megacyte = 0
+Bistot - 8196*Pyerite - 307*Zydrine - 68*Megacyte = 0
+Crokite - 143430*Tritanium - 519*Nocxium - 92*Zydrine = 0
+Gneiss - 1503*Pyerite - 1639*Mexallon - 205*Isogen = 0
+Spodumain - 38248*Tritanium - 8230*Pyerite - 1434*Mexallon - 307*Isogen = 0
+DarkOchre - 68300*Tritanium - 1093*Isogen - 82*Nocxium = 0
+u1 - Tritanium + 95676752 =0
+u2 - Pyerite + 22484543 =0
+u3 - Mexallon + 8380096 =0
+u4 - Isogen + 1392445 =0
+u5 - Nocxium + 408300 =0
+u6 - Zydrine + 145350 =0
+u7 - Megacyte + 66090- =0
+
+13 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 r13
+20 _Tritanium	_Pyerite	_Mexallon	_Isogen	_Nocxium	_Zydrine	_Megacyte	Arkonor	Bistot	Crokite	Gneiss	Spodumain	DarkOchre	Tritanium	Pyerite	Mexallon	Isogen	Nocxium	Zydrine	Megacyte
+1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	0	0	0	0	0
+0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	0	0	0	0
+0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	0	0	0
+0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	0	0
+0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0	0
+0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1	0
+0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	-1
+0	0	0	0	0	0	0	1	0	0	0	0	0	150260	0	1708	0	0	0	219
+0	0	0	0	0	0	0	0	1	0	0	0	0	0	8196	0	0	0	307	68
+0	0	0	0	0	0	0	0	0	1	0	0	0	143430	0	0	0	519	92	0
+0	0	0	0	0	0	0	0	0	0	1	0	0	0	1503	1639	205	0	0	0
+0	0	0	0	0	0	0	0	0	0	0	1	0	38248	8230	1434	307	0	0	0
+0	0	0	0	0	0	0	0	0	0	0	0	1	68300	0	0	1093	82	0	0
