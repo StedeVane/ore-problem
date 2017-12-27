@@ -4,14 +4,14 @@ package com.tcl.simplex;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Matrix {
+public class MMatrix {
 
     private List<List<Double>> matrix;
     private int n,m;
 
     private List<String> rowLable, columnLable;
 
-    public Matrix(List<List<Double>> matrix, List<String> rowLable, List<String> columnLable) {
+    public MMatrix(List<List<Double>> matrix, List<String> rowLable, List<String> columnLable) {
         this.matrix = new ArrayList<>();
         this.matrix.addAll(matrix);
         this.rowLable = new ArrayList<>(rowLable);
@@ -21,7 +21,7 @@ public class Matrix {
         this.m = matrix.get(0).size();
     }
 
-    public Matrix(Matrix matrix) {
+    public MMatrix(MMatrix matrix) {
         this.matrix = new ArrayList<>();
         this.matrix.addAll(matrix.matrix);
 
@@ -41,8 +41,8 @@ public class Matrix {
     }
 
 
-    public Matrix gaussian() {
-        Matrix result = new Matrix(this);
+    public MMatrix gaussian() {
+        MMatrix result = new MMatrix(this);
         int ii=0;
 
         while (ii<n) {

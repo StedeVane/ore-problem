@@ -34,9 +34,9 @@ public class Main {
             l.add(d);
         }
 
-        Matrix matrix = new Matrix(l,rowLable,columnLable);
+        MMatrix matrix = new MMatrix(l,rowLable,columnLable);
         System.out.println(matrix);
-        Matrix mmm = matrix.gaussian();
+        MMatrix mmm = matrix.gaussian();
 
 
 
